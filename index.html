@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport"    content="width=device-width, initial-scale=1">
-    <meta name="description" content="nSnake, customizable snake game on the console">
+    <meta name="description" content="nSnake, classic snake game on the terminal">
     <meta name="author"      content="Alexandre Dantas">
-	<meta name="keywords"    content="snake,game,c++,terminal,console,tty">
+	<meta name="keywords"    content="snake,game,c++,ncurses,terminal,console,tty">
 
     <title>nSnake homepage</title>
 
@@ -158,70 +158,420 @@
         <div class="col-md-8">
 
           <h1 class="page-header">
-            Page Heading
-            <small>Secondary Text</small>
+            nSnake
+            <small>classic snake game on the terminal</small>
           </h1>
+
+		  <p>
+			<em>nsnake</em> is a clone of the classic snake game usually found on
+			old cellphones.
+			<br />
+			You play this game on the terminal, with textual interface.
+		  </p>
+
+		  <ul>
+			<li>Customizable gameplay, appearance and keybindings</li>
+			<li>GUI-like interface with nice animations</li>
+			<li>Levels; create your own <a href="https://github.com/alexdantas/nSnake/wiki/How-to-create-your-own-levels">easily</a></li>
+			<li>Lots of possible game modes; teleport, scroll map, random walls, etc. Scores are saved for each setting</li>
+		  </ul>
+
+		  <p>
+			<em>nsnake</em> is open-source and free software, made with C++ and ncurses.
+		  </p>
+
+		  <hr>
 
           <!-- First Blog Post -->
           <h2>
-            <a href="#">Blog Post Title</a>
+            <a href="#">Download</a>
           </h2>
-          <p class="lead">
-            by <a href="index.php">Start Bootstrap</a>
-          </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:00 PM</p>
-          <hr>
-          <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-          <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-          <hr>
+		  <p>
+			You can directly download and compile the latest <em>nsnake</em> source here.
+			But if your distro is listed below, I recommend you to install from there.
+		  </p>
+
+		  <div class="well well-sm text-center">
+			<a class="btn btn-primary" href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/">
+			  GNU/Linux (latest version)
+			</a>
+			<a class="btn btn-primary" href="http://sourceforge.net/projects/nsnake/files/Windows/">
+			  Windows (v1.5)
+			</a>
+			<a class="btn btn-primary" href="https://github.com/alexdantas/nSnake">
+			  Source Code
+			</a>
+		  </div>
+
+		  <h3>Easy install</h3>
+
+		  <p>
+			<em>nsnake</em> is natively available on some Linux distros. <br />
+			They have the advantage of easy installing and automatic updates,
+			but the game might not be on the latest version. If that's the case,
+			please notify the maintainer on the package links.
+		  </p>
+
+		  <table class="table table-bordered table-striped table-hover">
+			<thead>
+			  <tr>
+				<th>
+				  Distro
+				</th>
+				<th>
+				  Install command
+				</th>
+				<th>
+				  Package link
+				</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>
+				  <em>Ubuntu</em>
+				</td>
+				<td>
+				  <code>apt-get install nsnake</code>
+				</td>
+				<td>
+				  <a href="https://tracker.debian.org/pkg/nsnake">Debian Package Tracker</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Debian</em>
+				</td>
+				<td>
+				  <code>apt-get install nsnake</code>
+				</td>
+				<td>
+				  <a href="https://launchpad.net/ubuntu/+source/nsnake">Launchpad</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Fedora</em>
+				</td>
+				<td>
+				  <code>yum install nsnake</code>
+				</td>
+				<td>
+				  <a href="https://apps.fedoraproject.org/packages/nsnake">Fedora Packages</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>OpenSUSE</em>
+				</td>
+				<td>
+				  <code>yast</code>
+				</td>
+				<td>
+				  <a href="http://software.opensuse.org/package/nsnake">software.opensuse.org</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Arch Linux</em>
+				</td>
+				<td>
+				  <code>yaourt -S nsnake</code>
+				</td>
+				<td>
+				  <a href="https://aur.archlinux.org/packages/nsnake/">AUR</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Slackware</em>
+				</td>
+				<td several></td>
+				<td>
+				  <a href="http://slackbuilds.org/repository/14.1/games/nSnake/">SlackBuild</a>
+				</td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  <h3>Archive</h3>
+		  <p>
+			This is the <em>nsnake</em> download history.
+			<br />
+			If you're interested on how this game was made, check out
+			<a href="https://github.com/alexdantas/nSnake/tags">the tag history here</a>.
+		  </p>
+		  <p>
+			You can verify the download&#39;s integrity
+			<a href="https://help.ubuntu.com/community/HowToSHA256SUM">with SHA256</a> and
+			its signature with <a href="http://alexdantas.net/pgp">my
+			  <strong>public key</strong></a>.
+		  </p>
+
+		  <table class="table table-striped table-bordered table-hover">
+			<tbody>
+			  <tr>
+				<td>
+				  v3.0.1 (Ago 2014)
+				</td>
+				<td>
+				  <a href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/nsnake-3.0.1.tar.gz/download">nsnake-3.0.1.tar.gz</a>
+				</td>
+				<td>
+				  <a href="http://nsnake.alexdantas.net/meta/nsnake-3.0.1.sha256sum">SHA256 Checksum</a>
+				</td>
+				<td>
+				  <a href="meta/nsnake-3.0.1.asc">PGP Signature</a>
+				</td>
+				<td>
+				  <a href="https://github.com/alexdantas/nSnake/blob/v3.0.1/ChangeLog">ChangeLog</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  v3.0.0 (Jul 2014)
+				</td>
+				<td>
+				  <a href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/nsnake-3.0.0.tar.gz/download">nsnake-3.0.0.tar.gz</a>
+				</td>
+				<td>
+				  <a href="http://nsnake.alexdantas.net/meta/nsnake-3.0.0.sha256sum">SHA256 Checksum</a>
+				</td>
+				<td>
+				  <a href="meta/nsnake-3.0.0.asc">PGP Signature</a>
+				</td>
+				<td>
+				  <a href="https://github.com/alexdantas/nSnake/blob/v3.0.0/ChangeLog">ChangeLog</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  v2.0.8 (Jul 2014)
+				</td>
+				<td>
+				  <a href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/nsnake-2.0.8.tar.gz/download">nsnake-2.0.8.tar.gz</a>
+				</td>
+				<td>
+				  <a href="http://nsnake.alexdantas.net/meta/nsnake-2.0.8.sha256sum">SHA256 Checksum</a>
+				</td>
+				<td>
+				  <a href="meta/nsnake-2.0.8.asc">PGP Signature</a>
+				</td>
+				<td>
+				  <a href="https://github.com/alexdantas/nSnake/blob/v2.0.8/ChangeLog">ChangeLog</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  v2.0.7 (Jul 2014)
+				</td>
+				<td>
+				  <a href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/nsnake-2.0.7.tar.gz/download">nsnake-2.0.7.tar.gz</a>
+				</td>
+				<td>
+				  <a href="http://nsnake.alexdantas.net/meta/nsnake-2.0.7.sha256sum">SHA256 Checksum</a>
+				</td>
+				<td>
+				  <a href="meta/nsnake-2.0.7.asc">PGP Signature</a>
+				</td>
+				<td>
+				  <a href="https://github.com/alexdantas/nSnake/blob/v2.0.7/ChangeLog">ChangeLog</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  v2.0.0 (Mar 2014)
+				</td>
+				<td>
+				  <a href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/nsnake-2.0.0.tar.gz/download">nsnake-2.0.0.tar.gz</a>
+				</td>
+				<td>
+				  <a href="http://nsnake.alexdantas.net/meta/nsnake-2.0.0.sha256sum">SHA256 Checksum</a>
+				</td>
+				<td>
+				  <a href="meta/nsnake-2.0.0.asc">PGP Signature</a>
+				</td>
+				<td>
+				  <a href="https://github.com/alexdantas/nSnake/blob/v2.0.0/ChangeLog">ChangeLog</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  v1.7 (Mai 2013)
+				</td>
+				<td>
+				  <a href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/nsnake-1.7.tar.gz/download">nsnake-1.7.tar.gz</a>
+				</td>
+				<td>
+				  <a href="http://nsnake.alexdantas.net/meta/nsnake-1.7.sha256sum">SHA256 Checksum</a>
+				</td>
+				<td>
+				  <a href="meta/nsnake-1.7.asc">PGP Signature</a>
+				</td>
+				<td>
+				  <a href="https://github.com/alexdantas/nSnake/blob/v1.7/ChangeLog">ChangeLog</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  v1.5 (Jan 2012)
+				</td>
+				<td>
+				  <a href="http://sourceforge.net/projects/nsnake/files/GNU-Linux/nsnake-1.5.tar.gz/download">nsnake-1.5.tar.gz</a>
+				</td>
+				<td>
+				  <a href="http://nsnake.alexdantas.net/meta/nsnake-1.5.sha256sum">SHA256 Checksum</a>
+				</td>
+				<td>
+				  <a href="meta/nsnake-1.5.asc">PGP Signature</a>
+				</td>
+				<td>
+				  <a href="https://github.com/alexdantas/nSnake/blob/v1.5/ChangeLog">ChangeLog</a>
+				</td>
+			  </tr>
+			</tbody>
+		  </table>
+		  <hr>
+
+		  <h2>
+            <a href="#">Levels</a>
+		  </h2>
+
+		  <p>
+			<em>nsnake</em>, since <strong>v3.0.0</strong>, supports loading custom levels
+			(also known as mazes or maps).
+		  </p>
+		  <p>
+			They are simple text files ending with <code>.nsnake</code>.<br />
+			To play, put them on <code>~/.local/share/nsnake/levels</code> and load through
+			in-game menus.
+		  </p>
+		  <p>
+			You can easily create your own <code>nsnake</code> levels!
+		  </p>
+
+		  <ul>
+			<li>
+			  <a href="https://github.com/alexdantas/nSnake/blob/master/levels/arena00.nsnake">Sample level file</a>
+			</li>
+			<li>
+			  <a href="https://github.com/alexdantas/nSnake/wiki/How-to-create-your-own-levels">"How to Create Your own Levels"</a> on the Wiki.
+			</li>
+			<li>
+			  <a href="https://github.com/alexdantas/nSnake/wiki/Custom-level-list">Custom level list</a> - to show everyone your neat level, put it on this Wiki page!
+			</li>
+		  </ul>
+
+		  <h3>Default levels</h3>
+
+		  <p>
+			<em>nsnake</em> comes with several default levels, but <strong>they're not loaded right away</strong>!
+		  </p>
+		  <p>
+			By default they're placed on
+			<code>/usr/share/games/nsnake/levels</code>. Check all of them there
+			or download individually from the links below.
+		  </p>
 
           <!-- Second Blog Post -->
           <h2>
-            <a href="#">Blog Post Title</a>
+            <a href="#">Installation</a>
           </h2>
-          <p class="lead">
-            by <a href="index.php">Start Bootstrap</a>
-          </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-          <hr>
-          <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, quasi, fugiat, asperiores harum voluptatum tenetur a possimus nesciunt quod accusamus saepe tempora ipsam distinctio minima dolorum perferendis labore impedit voluptates!</p>
-          <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
-          <hr>
+		  <p>
+			The following commands should compile and install the game on the default
+			directories:
+		  </p>
 
-          <!-- Third Blog Post -->
-          <h2>
-            <a href="#">Blog Post Title</a>
-          </h2>
-          <p class="lead">
-            by <a href="index.php">Start Bootstrap</a>
-          </p>
-          <p><span class="glyphicon glyphicon-time"></span> Posted on August 28, 2013 at 10:45 PM</p>
-          <hr>
-          <img class="img-responsive" src="http://placehold.it/900x300" alt="">
-          <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptates, voluptas dolore ipsam cumque quam veniam accusantium laudantium adipisci architecto itaque dicta aperiam maiores provident id incidunt autem. Magni, ratione.</p>
-          <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+<pre><code>$ make
+$ sudo make install
+</code></pre>
 
-          <hr>
+		  <p>
+			By default, make install places the package on the following directories:
+		  </p>
 
-          <!-- Pager -->
-          <ul class="pager">
-            <li class="previous">
-              <a href="#">&larr; Older</a>
-            </li>
-            <li class="next">
-              <a href="#">Newer &rarr;</a>
-            </li>
-          </ul>
+<pre><code>/usr/games/                       Executable file
+~/.local/share/nsnake/            Settings and Score files
+</code></pre>
+
+		  <p>
+			For more advanced instructions (including how to install the game on a custom
+			directory) see the <code>INSTALL</code> file on the source root directory.
+		  </p>
+
+		  <h2>
+			<a href="#">How to Play</a>
+		  </h2>
+
+		  <p>The rules are the same of any snake game:</p>
+
+		  <p>
+			You control a hungry snake and the objective is to eat as many fruits you can.
+			Each fruit eaten increases it&#39;s size by two units. The game ends when the snake
+			collides with the walls or itself. Currently, nSnake has two modes: With borders
+			and without borders. The challenge is to earn the biggest score possible by
+			eating as many fruits as you can.
+		  </p>
+
+		  <h3>Controls</h3>
+
+		  <p>
+			The keybindings are completely customizable on the in-game menus.
+			The default ones are:
+		  </p>
+
+<pre><code>Arrow Keys          Moves the snake
+q                   Quits the game at any time
+p                   Pauses/Unpauses the game
+h                   Show help during game
+</code></pre>
+
+		  <h3>Command-line Options</h3>
+
+<pre><code>-h, --help
+Displays the quick help text.
+-v, --version
+Displays the version.
+</code></pre>
+
+		  <p>Online repositories:</p>
+
+		  <div class="text-center well well-sm">
+			<a class="btn btn-primary" href="http://github.com/alexdantas/nSnake">
+			  GitHub
+			</a>
+			<a class="btn btn-primary" href="http://code.google.com/p/nsnake/">
+			  Google Code
+			</a>
+			<a class="btn btn-primary" href="http://bitbucket.org/alexdantas/nsnake">
+			  Bitbucket
+			</a>
+			<a class="btn btn-primary" href="http://sourceforge.net/projects/nsnake">
+			  SourceForge
+			</a>
+		  </div>
+
+		  <h2>nSnake on the Web</h2>
+
+		  <ul>
+			<li><a href="%22http://ubuntugames.org/blog/jogue-pelo-terminal-com-nsnake-13%22">UbuntuGames.org</a></li>
+			<li><a href="%22http://ubuntuportal.com/play-nsnake-game-in-terminal-ubuntu-11-10/%22">UbuntuPortal.com</a></li>
+			<li><a href="%22http://www.upubuntu.com/2011/12/nsnake-play-classic-snake-game-in.html%22">UpUbuntu.com</a></li>
+			<li><a href="%22http://linux.softpedia.com/get/GAMES-ENTERTAINMENT/Arcade/nSnake-76771.shtml%22">Softpedia</a></li>
+			<li><a href="%22http://www.happypenguin.org/show?nSnake%22">LinuxGameTome</a></li>
+			<li><a href="%22http://linuxappfinder.com/package/nsnake/%22">LinuxAppFinder</a></li>
+			<li><a href="%22http://www.downloadplex.com/Linux/Games/Arcade/nsnake_463370.html%22">DownloadPlex.com</a></li>
+			<li><a href="%22http://www.ubuntuvibes.com/2011/12/snakes-in-your-terminal.html%22">UbuntuVibes</a></li>
+			<li><a href="%22http://linuxo.com/content/snakes-your-terminal%22">LinuxoPlanet</a></li>
+			<li><a href="%22http://my.gamedev.com.br/_nsnake/%22">GameDevBrasil</a></li>
+			<li><a href="%22http://forum.clubedohardware.com.br/nsnake-jogo-cobra/997922%22">ClubedoHardware</a></li>
+			<li><a href="%22http://websyrup.net/2012/01/20/nsnake-1-5/%22">WebSyrup</a></li>
+			<li><a href="%22http://www.openews.net/2012/nsnake-1-5-release-the-text-of-the-snake-game/%22">OpenNews</a></li>
+		  </ul>
 
         </div>
-
       </div>
       <!-- /.row -->
 
@@ -231,7 +581,23 @@
       <footer>
         <div class="row">
           <div class="col-lg-12">
-            <p>Copyright &copy; Your Website 2014</p>
+
+            <p>
+			  Copyright &copy; Alexandre Dantas 2014
+			</p>
+			<p>
+			  Based on theme
+			  <a href="http://startbootstrap.com/template-overviews/blog-home/">
+				"Blog Home" by StartBootstrap
+			  </a>
+			</p>
+			<p>
+			  Using theme
+			  <a href="http://bootswatch.com/">
+				"Darkly" by Bootswatch
+			  </a>
+			</p>
+
           </div>
           <!-- /.col-lg-12 -->
         </div>
