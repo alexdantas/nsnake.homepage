@@ -2,3 +2,12 @@
  * Custom CSS for the nSnake homepage
  */
 
+/* The RSS feed */
+#rss-feed ul {
+	list-style: none;
+}
+#rss-feed .itemDate {
+	font-size: small;
+	font-style: italic;
+}
+
