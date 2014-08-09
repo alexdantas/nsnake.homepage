@@ -436,6 +436,7 @@
 			  </tr>
 			</tbody>
 		  </table>
+
 		  <hr>
 
 		  <!-- Levels -->
@@ -701,6 +702,8 @@
 			</dd>
 		  </dl>
 
+		  <hr>
+
 		  <!-- Installation -->
           <h2>
 			<i class="fa fa-wrench"></i>
@@ -717,17 +720,33 @@ $ sudo make install
 </code></pre>
 
 		  <p>
-			By default, make install places the package on the following directories:
+			By default, <code>make install</code> places the package on the
+			following directories:
 		  </p>
 
-<pre><code>/usr/games/                       Executable file
-~/.local/share/nsnake/            Settings and Score files
-</code></pre>
+		  <ul>
+			<li>
+			  <code>/usr/bin</code>
+			  Game executable
+			</li>
+			<li>
+			  <code>~/.local/share/nsnake/</code>
+              Settings and Score files
+			</li>
+			<li>
+			  <code>~/.local/share/nsnake/levels</code>
+              Levels
+			</li>
+		  </ul>
 
 		  <p>
+			You can customize those locations by using <code>$PREFIX</code> and
+			<code>$DESTDIR</code>. See the file
 			For more advanced instructions (including how to install the game on a custom
 			directory) see the <code>INSTALL</code> file on the source root directory.
 		  </p>
+
+		  <hr>
 
 		  <!-- How to play -->
 		  <h2>
@@ -783,6 +802,8 @@ Displays the version.
 			</a>
 		  </div>
 
+		  <hr>
+
 		  <!-- Links on the Web -->
 		  <h2>nSnake on the Web</h2>
 
@@ -802,6 +823,16 @@ Displays the version.
 			<li><a href="%22http://www.openews.net/2012/nsnake-1-5-release-the-text-of-the-snake-game/%22">OpenNews</a></li>
 		  </ul>
 
+		  <hr>
+
+		  <!-- Contact -->
+		  <h2>
+            <a id="contact" name="contact" href="#contact">Contact</a>
+		  </h2>
+
+		  <p>
+			Aww yeah
+		  </p>
         </div>
       </div>
       <!-- /.row -->
