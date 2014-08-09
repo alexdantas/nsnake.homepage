@@ -81,6 +81,12 @@
 				Levels
 			  </a>
             </li>
+            <li>
+              <a href="#how">
+				<i class="fa fa-lg fa-question"></i>
+				How to Play
+			  </a>
+            </li>
 		  </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
@@ -777,39 +783,60 @@ $ sudo make install
 		  <!-- How to play -->
 		  <h2>
 			<i class="fa fa-question"></i>
-			<a href="#">How to Play</a>
+            <a id="how" name="how" href="#how">How to Play</a>
 		  </h2>
 
 		  <p>The rules are the same of any snake game:</p>
 
 		  <p>
-			You control a hungry snake and the objective is to eat as many fruits you can.
-			Each fruit eaten increases it&#39;s size by two units. The game ends when the snake
-			collides with the walls or itself. Currently, nSnake has two modes: With borders
-			and without borders. The challenge is to earn the biggest score possible by
-			eating as many fruits as you can.
+			You control a hungry snake and the objective is to eat as many
+			fruits you can.  Each fruit eaten increases its size. <br /> The
+			game ends when the snake collides with a wall or itself. The
+			challenge is to earn the biggest score possible by eating as many
+			fruits as you can.
 		  </p>
 
 		  <h3>Controls</h3>
 
 		  <p>
-			The keybindings are completely customizable on the in-game menus.
+			The keybindings are completely customizable on the in-game menus. <br />
 			The default ones are:
 		  </p>
 
-<pre><code>Arrow Keys          Moves the snake
-q                   Quits the game at any time
-p                   Pauses/Unpauses the game
-h                   Show help during game
-</code></pre>
+		  <table class="table table-hover table-bordered table-striped">
+			<thead>
+			  <tr>
+				<th>Key</th>
+				<th>Action</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td><kbd>arrow keys</kbd></td>
+                <td>Move the snake</td>
+			  </tr>
+			  <tr>
+				<td><kbd>q</kbd></td>
+                <td>Quits the game at any time</td>
+			  </tr>
+			  <tr>
+				<td><kbd>p</kbd></td>
+                <td>Pauses/Unpauses the game</td>
+			  </tr>
+			  <tr>
+				<td><kbd>h</kbd></td>
+                <td>Show help during game</td>
+			  </tr>
+			  <tr>
+				<td><kbd>Page Up</kbd>, <kbd>Page Down</kbd></td>
+                <td>First/Last item on the menu</td>
+			  </tr>
+			</tbody>
+		  </table>
 
-		  <h3>Command-line Options</h3>
-
-<pre><code>-h, --help
-Displays the quick help text.
--v, --version
-Displays the version.
-</code></pre>
+		  <p>
+			Try <code>man nsnake</code> for more info.
+		  </p>
 
 		  <hr>
 
