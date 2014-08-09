@@ -9,6 +9,9 @@
     <meta name="author"      content="Alexandre Dantas">
 	<meta name="keywords"    content="snake,game,c++,ncurses,terminal,console,tty">
 
+    <link rel="shortcut icon" sizes="16x16" href="favicon16.png" type="image/png">
+    <link rel="shortcut icon" sizes="32x32" href="favicon32.png" type="image/png">
+
     <title>nSnake homepage</title>
 
 	<!-- StartBootsrap "Blog Home" CSS -->
@@ -65,15 +68,15 @@
 			  </a>
             </li>
             <li>
-              <a href="#levels">
-				<i class="fa fa-lg fa-puzzle-piece"></i>
-				Levels
-			  </a>
-            </li>
-            <li>
               <a href="#installation">
 				<i class="fa fa-lg fa-wrench"></i>
 				Installation
+			  </a>
+            </li>
+            <li>
+              <a href="#levels">
+				<i class="fa fa-lg fa-puzzle-piece"></i>
+				Levels
 			  </a>
             </li>
             <li>
@@ -123,6 +126,9 @@
 			<a href="img/arcade-menu.png">
 			  <img class="img-thumbnail" src="img/arcade-menu.png">
 			</a>
+			<a href="img/balls-scroll.gif">
+			  <img class="img-thumbnail" src="img/balls-scroll.gif">
+			</a>
 			<a href="img/squares.png">
 			  <img class="img-thumbnail" src="img/squares.png">
 			</a>
@@ -140,9 +146,6 @@
 			</a>
 			<a href="img/wow.png">
 			  <img class="img-thumbnail" src="img/wow.png">
-			</a>
-			<a href="img/balls-scroll.gif">
-			  <img class="img-thumbnail" src="img/balls-scroll.gif">
 			</a>
 		  </div>
         </div>
@@ -189,8 +192,11 @@
           </h2>
 
 		  <p>
-			You can directly download and compile the latest <em>nsnake</em> source here.
-			But if your distro is listed below, I recommend you to install from there.
+			You can directly download and compile the latest <em>nsnake</em> version here.
+			<br />
+			But first,
+			<strong>check if your Linux distro already has <em>nsnake</em></strong>
+			<a href="#installation">on the <em>Installation</em> section below</a>.
 		  </p>
 
 		  <div class="well well-sm text-center">
@@ -208,109 +214,17 @@
 			</a>
 		  </div>
 
-		  <h3>Easy install</h3>
-
-		  <p>
-			<em>nsnake</em> is natively available on some Linux distros. <br />
-			They have the advantage of easy installing and automatic updates,
-			but the game might not be on the latest version. If that's the case,
-			please notify the maintainer on the package links.
-		  </p>
-
-		  <table class="table table-bordered table-striped table-hover">
-			<thead>
-			  <tr>
-				<th>
-				  Distro
-				</th>
-				<th>
-				  Install command
-				</th>
-				<th>
-				  Package link
-				</th>
-			  </tr>
-			</thead>
-			<tbody>
-			  <tr>
-				<td>
-				  <em>Ubuntu</em>
-				</td>
-				<td>
-				  <code>apt-get install nsnake</code>
-				</td>
-				<td>
-				  <a href="https://tracker.debian.org/pkg/nsnake">Debian Package Tracker</a>
-				</td>
-			  </tr>
-			  <tr>
-				<td>
-				  <em>Debian</em>
-				</td>
-				<td>
-				  <code>apt-get install nsnake</code>
-				</td>
-				<td>
-				  <a href="https://launchpad.net/ubuntu/+source/nsnake">Launchpad</a>
-				</td>
-			  </tr>
-			  <tr>
-				<td>
-				  <em>Fedora</em>
-				</td>
-				<td>
-				  <code>yum install nsnake</code>
-				</td>
-				<td>
-				  <a href="https://apps.fedoraproject.org/packages/nsnake">Fedora Packages</a>
-				</td>
-			  </tr>
-			  <tr>
-				<td>
-				  <em>OpenSUSE</em>
-				</td>
-				<td>
-				  <code>yast</code>
-				</td>
-				<td>
-				  <a href="http://software.opensuse.org/package/nsnake">software.opensuse.org</a>
-				</td>
-			  </tr>
-			  <tr>
-				<td>
-				  <em>Arch Linux</em>
-				</td>
-				<td>
-				  <code>yaourt -S nsnake</code>
-				</td>
-				<td>
-				  <a href="https://aur.archlinux.org/packages/nsnake/">AUR</a>
-				</td>
-			  </tr>
-			  <tr>
-				<td>
-				  <em>Slackware</em>
-				</td>
-				<td several></td>
-				<td>
-				  <a href="http://slackbuilds.org/repository/14.1/games/nSnake/">SlackBuild</a>
-				</td>
-			  </tr>
-			</tbody>
-		  </table>
-
-		  <h3>Archive</h3>
 		  <p>
 			This is the <em>nsnake</em> download history.
 			<br />
-			If you're interested on how this game was made, check out
-			<a href="https://github.com/alexdantas/nSnake/tags">the tag history here</a>.
+			You can verify the download&#39;s integrity
+			<a href="https://help.ubuntu.com/community/HowToSHA256SUM">with SHA256</a>
+			and its signature with
+			<a href="http://alexdantas.net/pgp">my <strong>public key</strong></a>.
 		  </p>
 		  <p>
-			You can verify the download&#39;s integrity
-			<a href="https://help.ubuntu.com/community/HowToSHA256SUM">with SHA256</a> and
-			its signature with <a href="http://alexdantas.net/pgp">my
-			  <strong>public key</strong></a>.
+			If you're interested on how this game was made, check out
+			<a href="https://github.com/alexdantas/nSnake/tags">the tag history here</a>.
 		  </p>
 
 		  <table class="table table-striped table-bordered table-hover">
@@ -436,6 +350,127 @@
 			  </tr>
 			</tbody>
 		  </table>
+
+		  <hr>
+
+		  <!-- Installation -->
+          <h2>
+			<i class="fa fa-wrench"></i>
+			<a id="installation" name="installation" href="#installation">Installation</a>
+          </h2>
+
+		  <h3>Automatic install</h3>
+
+		  <p>
+			<em>nsnake</em> is available on some Linux distros. <br />
+			They have the advantage of easy installing and automatic updates,
+			but the game might not be on the latest version. If that's the case,
+			<em>please</em> notify the maintainer on the package links.
+		  </p>
+
+		  <table class="table table-bordered table-striped table-hover">
+			<thead>
+			  <tr>
+				<th>
+				  Distro
+				</th>
+				<th>
+				  Install command
+				</th>
+				<th>
+				  Package link
+				</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>
+				  <em>Ubuntu</em>
+				</td>
+				<td>
+				  <code>apt-get install nsnake</code>
+				</td>
+				<td>
+				  <a href="https://tracker.debian.org/pkg/nsnake">Debian Package Tracker</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Debian</em>
+				</td>
+				<td>
+				  <code>apt-get install nsnake</code>
+				</td>
+				<td>
+				  <a href="https://launchpad.net/ubuntu/+source/nsnake">Launchpad</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Fedora</em>
+				</td>
+				<td>
+				  <code>yum install nsnake</code>
+				</td>
+				<td>
+				  <a href="https://apps.fedoraproject.org/packages/nsnake">Fedora Packages</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>OpenSUSE</em>
+				</td>
+				<td>
+				  <code>yast</code>
+				</td>
+				<td>
+				  <a href="http://software.opensuse.org/package/nsnake">software.opensuse.org</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Arch Linux</em>
+				</td>
+				<td>
+				  <code>yaourt -S nsnake</code>
+				</td>
+				<td>
+				  <a href="https://aur.archlinux.org/packages/nsnake/">AUR</a>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+				  <em>Slackware</em>
+				</td>
+				<td several></td>
+				<td>
+				  <a href="http://slackbuilds.org/repository/14.1/games/nSnake/">SlackBuild</a>
+				</td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  <h3>Manual install</h3>
+
+		  <p>
+			If you want to install <em>nsnake</em> manually, you must have the
+			<strong>development version of ncurses</strong>. <br />
+			Then, the following
+			commands should compile and install the game on the default directories:
+		  </p>
+
+<pre><code>$ make
+$ sudo make install
+</code></pre>
+
+		  <p>
+			If you want to test <em>nsnake</em> without installing, do
+			<code>make run</code>.
+		  </p>
+		  <p>
+			For more info check out <a href="https://github.com/alexdantas/nSnake/blob/master/README.md">the README</a>
+			and the <a href="https://github.com/alexdantas/nSnake/blob/master/INSTALL.md">INSTALL</a> files.
+		  </p>
 
 		  <hr>
 
@@ -701,50 +736,6 @@
 			  </div>
 			</dd>
 		  </dl>
-
-		  <hr>
-
-		  <!-- Installation -->
-          <h2>
-			<i class="fa fa-wrench"></i>
-			<a id="installation" name="installation" href="#installation">Installation</a>
-          </h2>
-
-		  <p>
-			The following commands should compile and install the game on the default
-			directories:
-		  </p>
-
-<pre><code>$ make
-$ sudo make install
-</code></pre>
-
-		  <p>
-			By default, <code>make install</code> places the package on the
-			following directories:
-		  </p>
-
-		  <ul>
-			<li>
-			  <code>/usr/bin</code>
-			  Game executable
-			</li>
-			<li>
-			  <code>~/.local/share/nsnake/</code>
-              Settings and Score files
-			</li>
-			<li>
-			  <code>~/.local/share/nsnake/levels</code>
-              Levels
-			</li>
-		  </ul>
-
-		  <p>
-			You can customize those locations by using <code>$PREFIX</code> and
-			<code>$DESTDIR</code>. See the file
-			For more advanced instructions (including how to install the game on a custom
-			directory) see the <code>INSTALL</code> file on the source root directory.
-		  </p>
 
 		  <hr>
 
